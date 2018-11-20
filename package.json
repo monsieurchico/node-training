@@ -14,7 +14,8 @@
     "exo8": "node src/string/exo8",
     "exo9": "node src/array/exo9",
     "exo10": "node src/array/exo10",
-    "exo11": "node src/array/exo11"
+    "exo11": "node src/array/exo11",
+    "exo12": "node src/array/exo12"
   },
   "repository": {
     "type": "git",

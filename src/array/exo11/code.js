@@ -13,21 +13,29 @@ Construire un tableau à partir des éléments d'un autre tableau
  * Utiliser l'ajout d'éléments avec []
  */
 const buildArrayWithFor = (source) => {
-
+    const res = []
+    for (let i = 0 ; i < source.length ; i++) {
+        res[i] = source[i]
+    }
+    return res
 }
 
 /*
  * Utiliser Array.push
  */
 const buildArrayWithPush = (source) => {
-
+    const res = []
+    for (let i = 0 ; i < source.length ; i++) {
+        res.push(source[i])
+    }
+    return res
 }
 
 /*
  * Utiliser les spread
  */
 const buildArrayWithSpread = (source) => {
-
+    return [...source]
 }
 
 Assert.arrayEquals(
