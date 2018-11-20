@@ -10,6 +10,7 @@ import Assert from '../../lib/assert'
 const string = 'ma super Chaine de Caractère'
 
 const convertToLowerCase = (str) => {
+    return str.toLowerCase()
 }
 
 Assert.equals(convertToLowerCase(string), 'ma super chaine de caractère')
