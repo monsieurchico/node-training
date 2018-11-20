@@ -13,5 +13,5 @@ const find = (str, subString) => {
     
 }
 
-console.log('Test: recherche chaine'.blue)
+console.log('Test: replace string'.blue)
 Assert.equals(find(string, 'Chaine'), 9)
