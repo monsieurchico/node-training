@@ -6,24 +6,29 @@ import Assert from '../../lib/assert'
  */
 
 /*
-Filtrer un tableau
-
-Compléter cette fonction pour qu'elle retourne un tableau contenant
-uniquement les valeurs entieres.
-Ces valeurs devront être triées
-
-@see Array.filter
-@see Array.sort
-@see Number.isInteger
+Convertir un tableau en chaine de caractères
 */
 
-const filter = (array, filteringFunction) => {
+/*
+ * Utiliser une boucle for et la concatenation
+ */
+const convertWithFor = (array, glue) => {
+    
 }
 
-const myFilteringFunction = (elem) => {
-}
+/*
+ * Utiliser Array.join
+ */
+const convertWithJoin = (array, glue) => {
 
-Assert.arrayEquals(
-    filter(['10', 52, 12, 34, {}, []], myFilteringFunction),
-    [12, 34, 52]
+} 
+
+Assert.equals(
+    convertWithFor(['ma', 'chaine', 'de caractères'], ' '),
+    'ma chaine de caractères'
+)
+
+Assert.equals(
+    convertWithJoin(['ma', 'chaine', 'de caractères'], ' '),
+    'ma chaine de caractères'
 )
