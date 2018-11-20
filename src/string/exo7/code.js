@@ -14,7 +14,7 @@ Compléter la fonction suivante afin qu'elle retourne le lien suivant :
 */
 
 const linkify = (href, content) => {
-    
+    return `<a href="${href}">${content}</a>`
 }
 
 console.log('Test: to upper case string'.blue)
