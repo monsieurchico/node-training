@@ -13,5 +13,4 @@ const convertToUpperCase = (str) => {
     return str.toUpperCase()
 }
 
-console.log('Test: convert string to upper case'.blue)
 Assert.equals(convertToUpperCase(string), 'MA SUPER CHAINE DE CARACTÈRE')

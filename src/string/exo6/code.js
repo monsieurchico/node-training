@@ -33,7 +33,6 @@ const toUpperCase = (str) => {
     return newString
 }
 
-console.log('Test: to upper case string'.blue)
 Assert.equals(
     toUpperCase('ma super Chaine de caracteres 12'),
     'MA SUPER CHAINE DE CARACTERES 12'
