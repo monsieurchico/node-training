@@ -18,9 +18,12 @@ Ces valeurs devront être triées
 */
 
 const filter = (array, filteringFunction) => {
+    const newArray = array.filter(filteringFunction)
+    return newArray.sort()
 }
 
 const myFilteringFunction = (elem) => {
+    return Number.isInteger(elem)
 }
 
 Assert.arrayEquals(
