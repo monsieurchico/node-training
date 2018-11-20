@@ -17,7 +17,9 @@ import Assert from '../../lib/assert'
  */
 
 const display = (object) => {
-
+    Object.entries(object).map(elem => {
+        console.log(`${elem[0]} => ${elem[1]}`)
+    })
 }
 
 display({ id: 12, name: 'Romain', city: 'Bordeaux' })
