@@ -17,7 +17,6 @@ const linkify = (href, content) => {
     
 }
 
-console.log('Test: to upper case string'.blue)
 Assert.equals(
     linkify('https://www.google.fr', 'Go to Google'),
     '<a href="https://www.google.fr">Go to Google</a>'
