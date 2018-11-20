@@ -13,5 +13,4 @@ const removeSpaces = (str) => {
     return str.trim()
 }
 
-console.log('Test: remove spaces'.blue)
 Assert.equals(removeSpaces(string), 'ma super Chaine de Caractère')
