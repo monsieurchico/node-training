@@ -10,7 +10,7 @@ import Assert from '../../lib/assert'
 const string = 'ma super Chaine de Caractère'
 
 const convertToUpperCase = (str) => {
-
+    return str.toUpperCase()
 }
 
 console.log('Test: convert string to upper case'.blue)
