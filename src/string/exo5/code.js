@@ -9,9 +9,9 @@ import Assert from '../../lib/assert'
 
 const string = 'ma super Chaine de Caractère'
 
-const replace = (str, subString) => {
-    
+const replace = (str, search, replacement) => {
+
 }
 
 console.log('Test: replace string'.blue)
-Assert.equals(find(string, 'Chaine'), 9)
+Assert.equals(replace(string, 'Chaine', 'liste'), 'ma super liste de Caractère')
