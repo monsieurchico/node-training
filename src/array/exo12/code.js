@@ -17,7 +17,9 @@ import Assert from '../../lib/assert'
  * @see multi lines string
  */
 const display = (array) => {
-
+    array.map((elem, index) => {
+        console.log(`${index} => ${elem}`)
+    })
 }
 
 display(['12', 'toto', 'sdfg', 3456])
