@@ -10,7 +10,7 @@ import Assert from '../../lib/assert'
 const string = '  ma super Chaine de Caractère   '
 
 const removeSpaces = (str) => {
-    
+    return str.trim();
 }
 
 console.log('Test: remove spaces'.blue)

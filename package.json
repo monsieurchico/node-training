@@ -6,7 +6,8 @@
   "scripts": {
     "exo1": "node src/string/exo1",
     "exo2": "node src/string/exo2",
-    "exo3": "node src/string/exo3"
+    "exo3": "node src/string/exo3",
+    "exo4": "node src/string/exo4"
   },
   "repository": {
     "type": "git",
