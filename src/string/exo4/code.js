@@ -13,5 +13,4 @@ const find = (str, subString) => {
     
 }
 
-console.log('Test: find sub string in main string'.blue)
 Assert.equals(find(string, 'Chaine'), 9)
