@@ -10,7 +10,7 @@ import Assert from '../../lib/assert'
 const string = 'ma super Chaine de Caractère'
 
 const find = (str, subString) => {
-    
+    return str.indexOf(subString)
 }
 
 console.log('Test: find sub string in main string'.blue)
