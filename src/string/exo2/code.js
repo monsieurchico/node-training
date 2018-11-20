@@ -10,7 +10,7 @@ import Assert from '../../lib/assert'
 const string = 'ma super Chaine de Caractère'
 
 const convertToUpperCase = (str) => {
-
+    return str.toUpperCase()
 }
 
 Assert.equals(convertToUpperCase(string), 'MA SUPER CHAINE DE CARACTÈRE')
