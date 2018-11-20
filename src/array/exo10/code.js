@@ -6,36 +6,24 @@ import Assert from '../../lib/assert'
  */
 
 /*
-Parcourir un tableau et afficher ses éléments
-(utiliser boucle for)
+Filtrer un tableau
+
+Compléter cette fonction pour qu'elle retourne un tableau contenant
+uniquement les valeurs entieres.
+Ces valeurs devront être triées
+
+@see Array.filter
+@see Array.sort
+@see Number.isInteger
 */
 
-const loopWithFor = (array) => {
-    for (let i = 0 ; i < array.length ; i++) {
-        console.log(array[i])
-    }
+const filter = (array, filteringFunction) => {
 }
 
-const loopWithForeach = (array) => {
-    array.forEach(element => {
-        console.log(element)
-    })
+const myFilteringFunction = (elem) => {
 }
 
-const loopWithMap = (array) => {
-    array.map(element => {
-        console.log(element)
-    })
-}
-
-console.log('loopWithFor'.blue)
-loopWithFor([1, 345, 'toto', 34])
-console.log(' ')
-
-console.log('loopWithForeach'.blue)
-loopWithForeach([1, 345, 'toto', 34])
-console.log(' ')
-
-console.log('loopWithMap'.blue)
-loopWithMap([1, 345, 'toto', 34])
-console.log(' ')
+Assert.arrayEquals(
+    filter(['10', 52, 12, 34, {}, []], myFilteringFunction),
+    [12, 34, 52]
+)
