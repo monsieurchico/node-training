@@ -8,7 +8,7 @@ import Assert from '../../lib/assert'
 // concatener des chaines de caracteres
 
 const addString = (str1, str2, str3) => {
-
+    return str1.concat(' ', str2, ' ', str3)
 }
 
 Assert.equals(addString(
