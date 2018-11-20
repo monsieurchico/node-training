@@ -23,7 +23,16 @@ Compléter la fonction suivante afin qu'elle affiche le résultat suivant :
 */
 
 const grid = () => {
-
+    let res = ''
+    for (let i = 1 ; i <= 10 ; i++) {
+        for (let j = 1 ; j <= 10 ; j++) {
+            res += ''.concat(i * j).padEnd(3, ' ')
+        }
+        if (i < 10) {
+            res += "\n"
+        }
+    }
+    return res
 }
 
 Assert.equals(
