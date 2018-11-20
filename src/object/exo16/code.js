@@ -6,17 +6,67 @@ import Assert from '../../lib/assert'
  */
 
 /*
- * Créer une fonction qui parcourt un tableau et affiche ses infos comme dans l'exemple :
- *
- * const user = { id: 12, name: 'Romain', city: 'Bordeaux' }
- * display(user)
- *   id => 12
- *   name => Romain
- *   city => Bordeaux
+ * Destructuration d'object
  */
 
-const display = (id, name, address, zipcode, city) => {
+const user = {
+    id: 12,
+    name: 'Romain Derocle',
+    address: {
+        number: 138,
+        street: 'quai des chartrons',
+        zip: '33300',
+        city: 'Bordeaux'
+    },
+    helmets: ['hedon', 'xlite', 'hedon'],
+    motos: [
+        {
+            brand: 'Harley',
+            year: 2014
+        },
+        {
+            brand: 'Triumph',
+            year: 2015
+        },
+        {
+            brand: 'Harley',
+            year: 2016
+        }
+    ]
+}
+
+const getName = () => {
     
 }
 
-display({ id: 12, name: 'Romain', city: 'Bordeaux' })
+const getAddress = () => {
+    
+}
+
+const getAddressCity = () => {
+    
+}
+
+const getHelmets = () => {
+    
+}
+
+const getSecondHelmet = () => {
+    
+}
+
+const getSecondMotoBrand = () => {
+    
+}
+
+Assert.equals(getName(), 'Romain Derocle')
+Assert.objectEquals(getAddress(), {
+    number: 138,
+    street: 'quai des chartrons',
+    zip: '33300',
+    city: 'Bordeaux'
+})
+Assert.equals(getAddressCity(), 'Bordeaux')
+Assert.arrayEquals(getHelmets(), ['hedon', 'xlite', 'hedon'])
+Assert.equals(getSecondHelmet(), 'xlite')
+Assert.equals(getSecondMotoBrand(), 'Triumph')
