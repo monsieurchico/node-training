@@ -25,4 +25,18 @@ const arrayEquals = (array1, array2) => {
     return false
 }
 
-export default { equals, arrayEquals }
+const objectEquals = (object1, object2) => {
+    const source = JSON.stringify(object1)
+    const expected = JSON.stringify(object2)
+    console.log('Compare source', source.blue, 'with expectation', expected.green)
+    
+    if (source === expected) {
+        console.log('OK'.green)
+        return true
+    }
+    
+    console.error(`Invalid equals assertion: Expected "${expected}" (given "${source}")`.red)
+    return false
+}
+
+export default { equals, arrayEquals, objectEquals }
