@@ -15,7 +15,7 @@ import Assert from '../../lib/assert'
  *   city => Bordeaux
  */
 
-const display = (id, name, address, zipcode, city) => {
+const display = (object) => {
     
 }
 
