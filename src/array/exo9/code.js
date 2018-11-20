@@ -7,21 +7,29 @@ import Assert from '../../lib/assert'
 
 /*
 Parcourir un tableau et afficher ses éléments
-(utiliser boucle for)
 */
 
+/*
+Utiliser boucle for
+*/
 const loopWithFor = (array) => {
     for (let i = 0 ; i < array.length ; i++) {
         console.log(array[i])
     }
 }
 
+/*
+Utiliser Array.forEach
+*/
 const loopWithForeach = (array) => {
     array.forEach(element => {
         console.log(element)
     })
 }
 
+/*
+Utiliser Array.map
+*/
 const loopWithMap = (array) => {
     array.map(element => {
         console.log(element)
