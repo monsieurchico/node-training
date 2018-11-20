@@ -19,7 +19,8 @@
     "exo13": "node src/array/exo13",
     "exo14": "node src/object/exo14",
     "exo15": "node src/object/exo15",
-    "exo16": "node src/object/exo16"
+    "exo16": "node src/object/exo16",
+    "exo17": "node src/object/exo17"
   },
   "repository": {
     "type": "git",

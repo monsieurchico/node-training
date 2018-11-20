@@ -36,27 +36,33 @@ const user = {
 }
 
 const getName = () => {
-    
+    const { name } = user
+    return name
 }
 
 const getAddress = () => {
-    
+    const { address } = user
+    return address
 }
 
 const getAddressCity = () => {
-    
+    const { address: { city } } = user
+    return city
 }
 
 const getHelmets = () => {
-    
+    const { helmets } = user
+    return helmets
 }
 
 const getSecondHelmet = () => {
-    
+    const { helmets: [, second ] } = user
+    return second
 }
 
 const getSecondMotoBrand = () => {
-    
+    const { motos: [ , { brand } ] } = user
+    return brand
 }
 
 Assert.equals(getName(), 'Romain Derocle')
