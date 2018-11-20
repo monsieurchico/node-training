@@ -13,5 +13,4 @@ const convertToLowerCase = (str) => {
     return str.toLowerCase()
 }
 
-console.log('Test: convert to string to lower case'.blue)
 Assert.equals(convertToLowerCase(string), 'ma super chaine de caractère')
