@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "string:exo1": "node src/string/exo1"
+    "exo1": "node src/string/exo1"
   },
   "repository": {
     "type": "git",
