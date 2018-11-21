@@ -9,10 +9,10 @@ import fetch from 'node-fetch'
 /*
  * Appeler une URL avec fetch et promises
  */
-const callUrlWithPromise = (url, callback) => {
+const callUrl = (url, callback) => {
     
 }
 
-callUrlWithPromise('https://jsonplaceholder.typicode.com/todos/1', (response) => {
+callUrl('https://jsonplaceholder.typicode.com/todos/1', (response) => {
     Assert.equals(response.userId, 1)
 })
