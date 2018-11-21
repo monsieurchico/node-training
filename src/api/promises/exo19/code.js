@@ -16,10 +16,9 @@ const callUrl = async (url) => {
 const test = async () => {
     const response = await callUrl('https://jsonplaceholder.typicode.com/todos/1')
     Assert.objectEquals(response, {
-        headers: { code: 200, 'content-type': 'application/json' },
+        headers: { code: 200, 'content-type': 'application/json; charset=utf-8' },
         body: { userId: 1 }
     })
-    // Assert.equals(response.userId, 1)
 }
 
 test()
