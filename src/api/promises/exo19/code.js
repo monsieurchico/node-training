@@ -11,12 +11,13 @@ import fetch from 'node-fetch'
  */
 const callUrl = async (url) => {
     const res = await fetch(url)
-    const body = res.json()
-    console.log(body)
+    const headers = res.headers
+    const { userId } = await res.json()
+    
     return {
         headers: {
-            code: 200,
-            'content-type': 'application/json'
+            code: res.status,
+            'content-type': headers.get('content-type')
         },
         body: {
             userId
