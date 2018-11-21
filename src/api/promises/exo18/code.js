@@ -15,7 +15,7 @@ const callUrl = async (url) => {
 }
 
 const test = async () => {
-    const response = await callUrl('https://jsonplaceholder.typicode.com/todos/1')
+    const response = await callUrlWithPromise('https://jsonplaceholder.typicode.com/todos/1')
     Assert.equals(response.userId, 1)
 }
 
