@@ -9,7 +9,7 @@ import fetch from 'node-fetch'
 /*
  * Appeler une URL avec fetch et async / await
  */
-const callUrl = async (url, callback) => {
+const callUrl = async (url) => {
 
 }
 
