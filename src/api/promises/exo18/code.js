@@ -10,7 +10,8 @@ import fetch from 'node-fetch'
  * Appeler une URL avec fetch et async / await
  */
 const callUrl = async (url) => {
-
+    const res = await fetch(url)
+    return res.json()
 }
 
 const test = async () => {

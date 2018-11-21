@@ -9,7 +9,6 @@ import fetch from 'node-fetch'
 /*
  * Appeler une URL avec fetch et promises
  */
-
 const callUrl = (url, callback) => {
     fetch(url)
         .then(res => res.json())
