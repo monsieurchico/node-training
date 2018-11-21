@@ -21,7 +21,8 @@
     "exo15": "node src/object/exo15",
     "exo16": "node src/object/exo16",
     "exo17": "node src/api/promises/exo17",
-    "exo18": "node src/api/promises/exo18"
+    "exo18": "node src/api/promises/exo18",
+    "exo19": "node src/api/promises/exo19"
   },
   "repository": {
     "type": "git",
