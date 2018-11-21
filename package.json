@@ -22,10 +22,15 @@
     "exo16": "node src/object/exo16",
     "exo17": "node src/api/promises/exo17",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "exo18": "node src/api/promises/exo18",
     "exo19": "node src/api/promises/exo19"
 =======
     "exo18": "node src/api/promises/exo18"
+>>>>>>> wip
+=======
+    "exo18": "node src/api/promises/exo18",
+    "exo19": "node src/api/promises/exo19"
 >>>>>>> wip
   },
   "repository": {
