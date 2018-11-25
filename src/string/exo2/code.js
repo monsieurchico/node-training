@@ -1,16 +1,26 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import convertToUpperCase from './correction'
+
+console.log('String::exo2'.blue)
+console.log('Passer une chaîne de caractères en MAJUSCULE'.green)
+console.log('')
 
 /**
- * Manipulation des chaines de caractères
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-// passer une chaine de caractère en majuscule
 
-const string = 'ma super Chaine de Caractère'
+/**
+ * test
+ */
 
-const convertToUpperCase = (str) => {
-    return str.toUpperCase()
-}
-
-Assert.equals(convertToUpperCase(string), 'MA SUPER CHAINE DE CARACTÈRE')
+console.log('Tests'.blue)
+Assert.equals({
+    source: convertToUpperCase('ma super Chaîne de Caractères'),
+    expected: 'MA SUPER CHAÎNE DE CARACTÈRES'
+})

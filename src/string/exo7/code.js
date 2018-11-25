@@ -1,23 +1,31 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import linkify from './correction'
+
+console.log('String::exo7'.blue)
+console.log('Créer une balise HTML "a" avec ses attributs'.green)
+console.log('')
 
 /**
- * Manipulation des chaines de caractères
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-/*
-Chaines dynamiques
 
-Compléter la fonction suivante afin qu'elle retourne le lien suivant :
+/**
+ * test
+ */
 
-<a href="http://monlien">mon contenu</a>
-*/
+console.log('Tests'.blue)
+Assert.equals({
+    source: linkify('https://www.google.fr', 'Go to Google.com'),
+    expected: '<a href="https://www.google.fr">Go to Google.com</a>'
+})
 
-const linkify = (href, content) => {
-    return `<a href="${href}">${content}</a>`
-}
-
-Assert.equals(
-    linkify('https://www.google.fr', 'Go to Google'),
-    '<a href="https://www.google.fr">Go to Google</a>'
-)
+Assert.equals({
+    source: linkify('https://wildcodeschool.fr', 'Go to Wild Code School site'),
+    expected: '<a href="https://wildcodeschool.fr">Go to Wild Code School site</a>'
+})

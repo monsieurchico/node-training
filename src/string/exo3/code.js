@@ -1,16 +1,26 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import removeSpaces from './correction'
+
+console.log('String::exo3'.blue)
+console.log('Supprimer les espaces de début et de fin d\'une chaîne de caractères'.green)
+console.log('')
 
 /**
- * Manipulation des chaines de caractères
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-// supprimer les espaces en début et fin de chaine
 
-const string = '  ma super Chaine de Caractère   '
+/**
+ * test
+ */
 
-const removeSpaces = (str) => {
-    return str.trim()
-}
-
-Assert.equals(removeSpaces(string), 'ma super Chaine de Caractère')
+console.log('Tests'.blue)
+Assert.equals({
+    source: removeSpaces('      ma super chaîne de caractères      '),
+    expected: 'ma super chaîne de caractères'
+})

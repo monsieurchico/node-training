@@ -1,18 +1,40 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import {
+    concat3StringsVersion1,
+    concat3StringsVersion2,
+    concat3StringsVersion3
+} from './correction'
+
+console.log('String::exo5'.blue)
+console.log('Concatener 3 chaînes de caractères (de 3 façons différentes)'.green)
+console.log('')
 
 /**
- * Manipulation des chaines de caractères
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-// concatener des chaines de caracteres
 
-const addString = (str1, str2, str3) => {
-    return str1.concat(' ', str2, ' ', str3)
-}
+/**
+ * test
+ */
 
-Assert.equals(addString(
-    'ma super',
-    'Chaine',
-    'de caractères'
-), 'ma super Chaine de caractères')
+console.log('Tests'.blue)
+Assert.equals({
+    source: concat3StringsVersion1('ma super ', 'chaîne de', ' caractères'),
+    expected: 'ma super chaîne de caractères'
+})
+
+Assert.equals({
+    source: concat3StringsVersion2('ma ', 'super ', 'chaîne de caractères'),
+    expected: 'ma super chaîne de caractères'
+})
+
+Assert.equals({
+    source: concat3StringsVersion3('ma ', 'super chaîne de', ' caractères'),
+    expected: 'ma super chaîne de caractères'
+})

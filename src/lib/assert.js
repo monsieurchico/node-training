@@ -1,6 +1,6 @@
 import 'colors'
 
-const equals = (source, expected) => {
+const equals = ({ source, expected }) => {
     console.log('Compare source', ''.concat(source).blue, 'with expectation', ''.concat(expected).green)
     if (source === expected) {
         console.log('OK'.green)
@@ -10,31 +10,31 @@ const equals = (source, expected) => {
     return false
 }
 
-const arrayEquals = (array1, array2) => {
-    const source = array1.join(', ')
-    const expected = array2.join(', ')
+const arrayEquals = ({ source, expected }) => {
+    source = source.join(', ')
+    expected = expected.join(', ')
 
     console.log('Compare source', source.blue, 'with expectation', expected.green)
-    
-    if (JSON.stringify(array1) === JSON.stringify(array2)) {
+
+    if (JSON.stringify(source) === JSON.stringify(expected)) {
         console.log('OK'.green)
         return true
     }
-    
+
     console.error(`Invalid equals assertion: Expected "${expected}" (given "${source}")`.red)
     return false
 }
 
-const objectEquals = (object1, object2) => {
-    const source = JSON.stringify(object1)
-    const expected = JSON.stringify(object2)
+const objectEquals = ({ source, expected }) => {
+    source = JSON.stringify(source)
+    expected = JSON.stringify(expected)
     console.log('Compare source', source.blue, 'with expectation', expected.green)
-    
+
     if (source === expected) {
         console.log('OK'.green)
         return true
     }
-    
+
     console.error(`Invalid equals assertion: Expected "${expected}" (given "${source}")`.red)
     return false
 }
