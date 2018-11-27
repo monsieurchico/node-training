@@ -6,7 +6,7 @@ import {
     concat3StringsVersion3
 } from './correction'
 
-console.log('String::exo5'.blue)
+console.log('String > exo5'.blue)
 console.log('Concatener 3 chaînes de caractères (de 3 façons différentes)'.green)
 console.log('')
 

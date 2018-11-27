@@ -2,7 +2,7 @@ import 'colors'
 import Assert from '../../lib/assert'
 import completeStringWithCharacters from './correction'
 
-console.log('String::exo6'.blue)
+console.log('String > exo6'.blue)
 console.log(`Compléter une chaîne de caractères jusqu'à une certaine longueur
 Utiliser un caractère de complément`.green)
 console.log('')

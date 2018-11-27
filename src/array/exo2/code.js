@@ -1,38 +1,47 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import { arrayToStringWithLoop, arrayToStringWithJoin } from './correction'
+
+console.log('Array > exo2'.blue)
+console.log('Convertir un tableau en chaîne de caractères'.green)
+console.log(' > sans utiliser Array.prototype.join'.green)
+console.log(' > en utilisant Array.prototype.join'.green)
+console.log('')
 
 /**
- * Manipulation des tableaux
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-/*
-Convertir un tableau en chaîne de caractères
-*/
 
-/*
- * Utiliser une boucle for et la concatenation
+/**
+ * test
  */
-const convertWithFor = (array, glue) => {
-    let str = ''
-    for (let i = 0; i < array.length; i++) {
-        str += array[i] + glue
-    }
-    return str.trim()
-}
 
-/*
- * Utiliser Array.join
- */
-const convertWithJoin = (array, glue) => {
-    return array.join(glue)
-}
+console.log('Tests'.blue)
 
-Assert.equals(
-    convertWithFor(['ma', 'chaîne', 'de caractères'], ' '),
-    'ma chaîne de caractères'
-)
+console.log("\n" + 'Test 1'.blue)
+Assert.equals({
+    source: arrayToStringWithLoop(['ma chaîne', 'de', 'caractères'], ' '),
+    expected: 'ma chaîne de caractères'
+})
 
-Assert.equals(
-    convertWithJoin(['ma', 'chaîne', 'de caractères'], ' '),
-    'ma chaîne de caractères'
-)
+Assert.equals({
+    source: arrayToStringWithLoop(['06', '07', '08', '09', '10'], '-'),
+    expected: '06-07-08-09-10'
+})
+
+console.log("\n" + 'Test 2'.blue)
+
+Assert.equals({
+    source: arrayToStringWithJoin(['ma chaîne', 'de', 'caractères'], ' '),
+    expected: 'ma chaîne de caractères'
+})
+
+Assert.equals({
+    source: arrayToStringWithJoin(['06', '07', '08', '09', '10'], '-'),
+    expected: '06-07-08-09-10'
+})

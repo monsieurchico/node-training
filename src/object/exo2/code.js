@@ -1,25 +1,40 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import objectToString from './correction'
+
+console.log('Object > exo2'.blue)
+console.log(`Convertir le contenu d\'un objet en chaîne de caractères`.green)
+console.log(`
+Exemples :
+
+const obj = { id: 12, username: 'Romain', city: 'Bordeaux' }
+
+id => 12
+username => Romain
+city => Bordeaux
+`)
+console.log(`@see
+Object.prototype.entries
+`)
 
 /**
- * Manipulation des objets
- */
-
-/*
- * @see Object.entries
- * Créer une fonction qui parcourt un tableau et affiche ses infos comme dans l'exemple :
+ * code
  * 
- * const user = { id: 12, name: 'Romain', city: 'Bordeaux' }
- * display(user)
- *   id => 12
- *   name => Romain
- *   city => Bordeaux
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-const display = (object) => {
-    Object.entries(object).map(elem => {
-        console.log(`${elem[0]} => ${elem[1]}`)
-    })
-}
 
-display({ id: 12, name: 'Romain', city: 'Bordeaux' })
+/**
+ * test
+ */
+
+console.log('Tests'.blue)
+
+Assert.equals({
+    source: objectToString({ id: 12, username: 'Romain', city: 'Bordeaux' }),
+    expected: `id => 12
+username => Romain
+city => Bordeaux`
+})

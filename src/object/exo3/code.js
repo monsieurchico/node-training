@@ -1,15 +1,34 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import {
+    getName,
+    getAddress,
+    getAddressCity,
+    getHelmets,
+    getSecondHelmet,
+    getSecondMotoBrand
+} from './correction'
+
+console.log('Object > exo3'.blue)
+console.log('Destructurer un objet pour en extraire des morceaux'.green)
+console.log('')
 
 /**
- * Manipulation des objets
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-/*
- * Destructuration d'object
+
+/**
+ * test
  */
 
-const user = {
+console.log('Tests'.blue)
+
+const USER = {
     id: 12,
     name: 'Romain Derocle',
     address: {
@@ -35,44 +54,37 @@ const user = {
     ]
 }
 
-const getName = () => {
-    const { name } = user
-    return name
-}
-
-const getAddress = () => {
-    const { address } = user
-    return address
-}
-
-const getAddressCity = () => {
-    const { address: { city } } = user
-    return city
-}
-
-const getHelmets = () => {
-    const { helmets } = user
-    return helmets
-}
-
-const getSecondHelmet = () => {
-    const { helmets: [, second ] } = user
-    return second
-}
-
-const getSecondMotoBrand = () => {
-    const { motos: [ , { brand } ] } = user
-    return brand
-}
-
-Assert.equals(getName(), 'Romain Derocle')
-Assert.objectEquals(getAddress(), {
-    number: 138,
-    street: 'quai des chartrons',
-    zip: '33300',
-    city: 'Bordeaux'
+Assert.equals({
+    source: getName(USER),
+    expected: 'Romain Derocle'
 })
-Assert.equals(getAddressCity(), 'Bordeaux')
-Assert.arrayEquals(getHelmets(), ['hedon', 'xlite', 'hedon'])
-Assert.equals(getSecondHelmet(), 'xlite')
-Assert.equals(getSecondMotoBrand(), 'Triumph')
+
+Assert.equals({
+    source: getAddress(USER),
+    expected: {
+        number: 138,
+        street: 'quai des chartrons',
+        zip: '33300',
+        city: 'Bordeaux'
+    }
+})
+
+Assert.equals({
+    source: getAddressCity(USER),
+    expected: 'Bordeaux'
+})
+
+Assert.equals({
+    source: getHelmets(USER),
+    expected: ['hedon', 'xlite', 'hedon']
+})
+
+Assert.equals({
+    source: getSecondHelmet(USER),
+    expected: 'xlite'
+})
+
+Assert.equals({
+    source: getSecondMotoBrand(USER),
+    expected: 'Triumph'
+})

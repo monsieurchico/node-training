@@ -2,7 +2,7 @@ import 'colors'
 import Assert from '../../lib/assert'
 import convertToUpperCase from './correction'
 
-console.log('String::exo2'.blue)
+console.log('String > exo2'.blue)
 console.log('Passer une chaîne de caractères en MAJUSCULE'.green)
 console.log('')
 

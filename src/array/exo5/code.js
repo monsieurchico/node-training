@@ -1,32 +1,37 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import sum from './correction'
+
+console.log('Array > exo5'.blue)
+console.log(`Filtrer un tableau afin d'en extraire uniquement les valeurs numériques. Calculer la somme des valeurs.`.green)
+console.log(`
+Exemples :
+
+const arr = [ '12', 57, 'test', 13, {}, [] ]
+
+sum(arr) => 70
+`)
+console.log(`@see
+Array.prototype.filter
+Array.prototype.reduce
+`)
 
 /**
- * Manipulation des tableaux
+ * code
+ * 
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
 
-/*
-Filtrer un tableau
 
-Compléter cette fonction pour qu'elle retourne un tableau contenant
-uniquement les valeurs entieres.
-Ces valeurs devront être triées
+/**
+ * test
+ */
 
-@see Array.filter
-@see Array.sort
-@see Number.isInteger
-*/
+console.log('Tests'.blue)
 
-const filter = (array, filteringFunction) => {
-    const newArray = array.filter(filteringFunction)
-    return newArray.sort()
-}
-
-const myFilteringFunction = (elem) => {
-    return Number.isInteger(elem)
-}
-
-Assert.arrayEquals(
-    filter(['10', 52, 12, 34, {}, []], myFilteringFunction),
-    [12, 34, 52]
-)
+Assert.equals({
+    source: sum(['toto', 57, 32, {}, [], 12]),
+    expected: 101
+})

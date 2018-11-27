@@ -1,25 +1,37 @@
 import 'colors'
 import Assert from '../../lib/assert'
+import filterArray from './correction'
+
+console.log('Array > exo4'.blue)
+console.log(`Filtrer un tableau afin d'en extraire uniquement les valeurs numériques. Le résultat doit être trié.`.green)
+console.log(`
+Exemples :
+
+const arr = [ '12', 57, 'test', 13, {}, [] ]
+
+filter(arr) => [13, 57]
+`)
+console.log(`@see
+Array.prototype.filter
+Array.prototype.sort
+`)
 
 /**
- * Manipulation des tableaux
- */
-
-/*
- * Parcourir le tableau et afficher son contenu sous la forme :
- *
- * cle1 => value1
- * cle2 => value2
- * cle3 => value3
- * ...
+ * code
  * 
- * @see Array.map(elem, index)
- * @see multi lines string
+ * @todo
+ * - Remove import of correction
+ * - Write your own correction below to make the tests work
  */
-const display = (array) => {
-    array.map((elem, index) => {
-        console.log(`${index} => ${elem}`)
-    })
-}
 
-display(['12', 'toto', 'sdfg', 3456])
+
+/**
+ * test
+ */
+
+console.log('Tests'.blue)
+
+Assert.equals({
+    source: filterArray(['toto', 57, 32, {}, [], 12]),
+    expected: [12, 32, 57]
+})

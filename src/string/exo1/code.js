@@ -2,7 +2,7 @@ import 'colors'
 import Assert from '../../lib/assert'
 import convertToLowerCase from './correction'
 
-console.log('String::exo1'.blue)
+console.log('String > exo1'.blue)
 console.log('Passer une chaîne de caractères en minuscule'.green)
 console.log('')
 

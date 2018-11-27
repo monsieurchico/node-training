@@ -2,7 +2,7 @@ import 'colors'
 import Assert from '../../lib/assert'
 import getSubStringPosition from './correction'
 
-console.log('String::exo4'.blue)
+console.log('String > exo4'.blue)
 console.log('Rechercher une sous-chaîne dans une chaîne de caractères et indiquer sa position'.green)
 console.log('')
 

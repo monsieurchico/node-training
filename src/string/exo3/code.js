@@ -2,7 +2,7 @@ import 'colors'
 import Assert from '../../lib/assert'
 import removeSpaces from './correction'
 
-console.log('String::exo3'.blue)
+console.log('String > exo3'.blue)
 console.log('Supprimer les espaces de début et de fin d\'une chaîne de caractères'.green)
 console.log('')
 
