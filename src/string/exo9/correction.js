@@ -1,10 +1,7 @@
 const strlen = (str) => {
-    let len = 0, i = 0
-    while (typeof str[i++] !== 'undefined') {
-        len++
-    }
-
-    return len
+    let i = 0
+    while (typeof str[i++] !== 'undefined') { }
+    return i - 1
 }
 
 export default strlen

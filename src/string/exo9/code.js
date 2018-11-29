@@ -2,8 +2,9 @@ import 'colors'
 import Assert from '../../lib/assert'
 import strlen from './correction'
 
-console.log('String > exo8'.blue)
+console.log('String > exo9'.blue)
 console.log('Créer une fonction qui retourne la longueur d\'une chaîne de caractères.'.green)
+console.log('Attention, vous n\'avez pas le droit d\'utiliser la fonction String.prototype.length')
 console.log(`@example
 strlen('Romain') => 6
 `)
@@ -16,7 +17,6 @@ console.log('')
  * - Remove import of correction
  * - Write your own correction below to make the tests work
  */
-
 
 /**
  * test

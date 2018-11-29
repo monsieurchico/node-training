@@ -3,8 +3,6 @@ import Assert from '../../lib/assert'
 import getOptimalChange from './correction'
 
 console.log('Algo > optimiseur de rendu de monnaie'.blue)
-import 'colors'
-
 console.log(`Les supermarchés s’équipent de plus en plus de caisses automatiques.La plupart de ces caisses n’acceptent que le paiement par carte bancaire bien qu’une part non négligeable de consommateurs paye encore en espèces(avec des billets et des pièces).
 
 Une des problématiques rencontrées avec le paiement en espèces est le rendu de monnaie: comment rendre une somme donnée de façon optimale, c'est-à-dire avec le nombre minimal de pièces et billets ? C'est un problème qui se pose à chacun de nous quotidiennement, à fortiori aux caisses automatiques.
